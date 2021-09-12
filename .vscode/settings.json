@@ -1,6 +1,7 @@
 {
     "python.testing.pytestEnabled": true,
     "python.linting.pycodestyleEnabled": true,
+    "python.defaultInterpreterPath": "~/venvs/learn/bin/python",
     "python.linting.pycodestyleArgs": [
         "--max-line-lenght 80"
     ],
