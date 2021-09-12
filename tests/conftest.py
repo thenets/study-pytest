@@ -14,10 +14,3 @@ def app():
 @pytest.fixture(scope="session")
 def client(app):
     return TestClient(app)
-
-
-@pytest.mark.get
-def test_static_root(client):
-    response = client.get("/")
-    assert response.status_code == 200
-    assert response.json() == {"message": "Hello World"}

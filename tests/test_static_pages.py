@@ -12,4 +12,6 @@ def test_static_root(client):
 def test_static_contact(client):
     response = client.get("/contact")
     assert response.status_code == 200
-    assert response.json() == {"message": "Página de contato"}
+    assert response.json() == {
+        "message": "Hi, I'm Luiz. You can reach me at https://thenets.org"
+    }
