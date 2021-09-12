@@ -4,13 +4,14 @@ import pytest
 
 from src import main
 
-# fixture to get FastAPI app
+
 @pytest.fixture(scope="session")
 def app():
+    """Fixture to get FastAPI app"""
     return main.app
 
 
-# fixture get FastAPI client
 @pytest.fixture(scope="session")
 def client(app):
+    """Fixture to get FastAPI client"""
     return TestClient(app)
